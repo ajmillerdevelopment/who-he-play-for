@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "who-he-play-for",
   },
-  plugins: ["gatsby-plugin-react-helmet"],
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-postcss"],
 };
