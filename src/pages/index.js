@@ -1,6 +1,7 @@
 import * as React from "react"
 import data from '../helpers/data'
 import getRandomInt from "../helpers/getRandomInt"
+import answers from '../helpers/answers'
 // markup
 const IndexPage = () => {
   const init = getRandomInt(0, (data.length + 1))
