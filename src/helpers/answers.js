@@ -1,4 +1,4 @@
-const answers = [
+const answerKey = [
     {
         team: 'atl',
         city: 'atlanta',
@@ -192,4 +192,4 @@ const answers = [
         full: 'houston rockets'
     },
 ]
-export default answers
+export default answerKey
