@@ -1,7 +1,7 @@
 import * as React from "react"
 import data from '../helpers/data'
 import getRandomInt from "../helpers/getRandomInt"
-import answerKey from '../helpers/answers'
+import checkAnswers from '../helpers/checkAnswers'
 // markup
 const IndexPage = () => {
   const init = getRandomInt(0, (data.length + 1))
@@ -9,7 +9,9 @@ const IndexPage = () => {
   const [answer, setAnswer] = React.useState(null)
   const submitAnswer = (event) => {
     event.preventDefault()
+    console.log(checkAnswers(answer, current))
     data.forEach((elem, i) => {
+      //set a new player to guess
       if (elem.name === current.name) {
         data.splice(i, 1)
       }
