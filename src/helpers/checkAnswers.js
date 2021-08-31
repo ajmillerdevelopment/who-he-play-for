@@ -1,10 +1,14 @@
 import answers from './answers'
 const checkAnswers = (submitted, current) => {
+    let returnValue = null
+    if (submitted === null) {
+        returnValue = 'bad syntax'
+        return returnValue
+    }
     submitted = submitted.toLowerCase()
     submitted = submitted.trim()
     current.team = current.team.toLowerCase()
     console.log(`submitted: ${submitted} current: ${current.team}`)
-    let returnValue = null
     if (submitted === current.team) {
         console.log(`Marking True...`)
         returnValue = 'correct'
